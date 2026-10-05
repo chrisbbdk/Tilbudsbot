@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Kør tilbudsbot fra repo-roden, uanset hvor scriptet startes.
+cd "$(dirname "$0")/.." || exit 1
+exec python3 -m tilbudsbot "$@"
